@@ -27,8 +27,7 @@ Now, put the indicator of the vim mode at the far left, set all of the backgroun
     set --universal tide_left_prompt_items vi_mode $tide_left_prompt_items
     set tide_vi_mode_bg_color_default eb6f92
     set tide_vi_mode_bg_color_insert eb6f92
-    set tide_vi_mode_bg_color_visual eb6f92
-    set tide_vi_mode_bg_color_replace eb6f92
+    set tide_vi_mode_bg_color_visual eb6f92 set tide_vi_mode_bg_color_replace eb6f92
     set tide_vi_mode_icon_default 
     set tide_vi_mode_icon_insert 
     set tide_vi_mode_icon_visual 󰼢
@@ -42,4 +41,11 @@ I also like to use lambda (for the lambda calculus) as a prompt
     set tide_character_vi_icon_visual 󰘧
     set tide_character_vi_icon_replace 󰘧
     set tide_character_color 908caa
+```
+
+Also, I don't really like the default colors of git:
+```fish
+    set tide_git_bg_color f6c177
+    set tide_git_bg_color_unstable f6c177
+    set tide_git_bg_color_urgent f6c177
 ```
