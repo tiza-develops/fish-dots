@@ -2,13 +2,13 @@
 This is a series of scripts that I use to feel more at home in my shell
 So first, install fish!
 Then put these commands:
+First, eliminate the annoying greeting and use vim motions
 ```fish
-    # eliminate the annoying greeting
     set -U fish_greeting ""
     fish_vi_key_bindings
 ```
+Install fisher
 ```fish
-# install fisher
 curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
 ```
 Now let's get to install a couple of plugins that you may end up using anyway
@@ -25,9 +25,10 @@ tide configure --auto --style=Rainbow --prompt_colors='True color' --show_time=N
 Now, put the indicator of the vim mode at the far left, set all of the background colors to rosé, and change the icons:
 ```fish
     set --universal tide_left_prompt_items vi_mode $tide_left_prompt_items
-    set tide_vi_mode_bg_color_default eb6f92
-    set tide_vi_mode_bg_color_insert eb6f92
-    set tide_vi_mode_bg_color_visual eb6f92 set tide_vi_mode_bg_color_replace eb6f92
+    set tide_vi_mode_bg_color_default cc241d
+    set tide_vi_mode_bg_color_insert cc241d
+    set tide_vi_mode_bg_color_visual cc241d 
+    set tide_vi_mode_bg_color_replace cc241d
     set tide_vi_mode_icon_default 
     set tide_vi_mode_icon_insert 
     set tide_vi_mode_icon_visual 󰼢
@@ -40,12 +41,11 @@ I also like to use lambda (for the lambda calculus) as a prompt
     set tide_character_vi_icon_default 󰘧
     set tide_character_vi_icon_visual 󰘧
     set tide_character_vi_icon_replace 󰘧
-    set tide_character_color 908caa
+    set tide_character_color 8ec07c
 ```
-
 Also, I don't really like the default colors of git:
 ```fish
-    set tide_git_bg_color f6c177
-    set tide_git_bg_color_unstable f6c177
-    set tide_git_bg_color_urgent f6c177
+    set tide_git_bg_color d79921
+    set tide_git_bg_color_unstable d79921
+    set tide_git_bg_color_urgent d79921
 ```
