@@ -1,5 +1,9 @@
 # Hello!
 This is a series of scripts that I use to feel more at home in my shell
+Before getting started, you will need a nerd font!
+```fish
+    bash -c  "$(curl -fsSL https://raw.githubusercontent.com/officialrajdeepsingh/nerd-fonts-installer/main/install.sh)"
+```
 So first, install fish!
 Then put these commands:
 First, eliminate the annoying greeting and use vim motions
